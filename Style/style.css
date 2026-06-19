@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+/* Nav Bar */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    min-height: 80px;
+    background: #212741;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+
+.logo {
+    height: 80px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 100%;
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    color: #ffffff;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: clamp(20px,1.3vw,200px);
+    margin-right: clamp(20px,1.3vw,200px);
+    font-size: clamp(0.6rem,1vw,1.5rem );
+}
+
+.nav-links select {
+    border: none;
+    font-size: clamp(0.6rem,1vw,1.5rem );
+    background: transparent;
+}
+
+option {
+    color: black;
+}
+
+
+nav button {
+    background-color: #43ba7f;
+    color: #ffffff;
+    padding:10px 20px;
+    border-radius:8px;
+    border: none;
+    font-size: clamp(0.6rem,1vw,1.5rem );
+}
+
+/* Hero Section */
+
+#hero-section {
+    background-image: url(/Mexant-website/Images/hero-section.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
