@@ -16,7 +16,7 @@ nav {
     align-items: center;
     min-height: 80px;
     background: #212741;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 10;
 }
@@ -51,15 +51,27 @@ nav {
     align-items: center;
 }
 
+.nav-links a:hover {
+    color: #ff511a;
+}
+
+.nav-links button a:hover{
+    color: #000;
+}
+
+.nav-links select:hover {
+    color:#ff511a
+}
+
 .nav-links li {
     margin-left: clamp(20px,1.3vw,200px);
     margin-right: clamp(20px,1.3vw,200px);
-    font-size: clamp(0.6rem,1vw,1.5rem );
+    font-size: clamp(0.8rem,1vw,1.5rem );
 }
 
 .nav-links select {
     border: none;
-    font-size: clamp(0.6rem,1vw,1.5rem );
+    font-size: clamp(0.8rem,1vw,1.5rem );
     background: transparent;
 }
 
@@ -68,13 +80,21 @@ option {
 }
 
 
-nav button {
+button {
     background-color: #43ba7f;
     color: #ffffff;
     padding:10px 20px;
-    border-radius:8px;
+    line-height: 25px;
+    border-radius:5px;
     border: none;
-    font-size: clamp(0.6rem,1vw,1.5rem );
+    font-size: clamp(0.8rem,1vw,1.5rem );
+    margin-right: clamp(15px,1.3vw,200px);
+}
+
+
+
+button:hover {
+    background-color: #ae624c;
 }
 
 /* Hero Section */
@@ -86,4 +106,88 @@ nav button {
     position: relative;
     width: 100%;
 }
+
+.content {
+    position: absolute;
+    width: 50%;
+    top: 80%;
+    transform: translateY(-80%);
+    left:  clamp(25px, 8vw, 200px);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: clamp(40px,4vw,100px);
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+em {
+    font-style: normal;
+    color: #ff511a;
+}
+
+.hor-line {
+    height: 6px;
+    width: clamp(60px,7vw,200px);
+    background-color: #ffffff;
+    border-radius: 3px;
+    margin-bottom: 40px;
+}
+
+#hero-section p {
+    margin-right: clamp(25px, 8vw, 200px);
+    margin-bottom: 50px;
+    font-size: clamp(0.8rem,1vw,1.5rem );
+    line-height: 26px;
+}
+
+.color-btn {
+    background-color: #ff511a;
+}
+
+/* Services Section */
+
+#Services {
+    margin: 60px 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 47%;
+    padding: clamp(20px,2vw,80px);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin: clamp(20px,2vw,80px) clamp(10px,1vw,40px);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.service-item h4 {
+    color: #212741;
+    font-weight: 600;
+    font-size: clamp(22px,1.3vw,50px);
+    margin-bottom: 20px;
+}
+
+.service-item p {
+    color: #212741;
+    line-height: 26px;
+    font-size: clamp(15px,1vw,60px);
+}
+
+
+.ser-icon i {
+    color: #43ba7f;
+    font-size: 64px;
+}
+
+.ser-content {
+    padding-left: clamp(20px,7%,100px);
+}
+
+
+
+
 

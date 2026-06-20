@@ -49,4 +49,34 @@
     #menu-toggle:checked ~ .nav-links {
         display: flex;
     }
+
+    /* Hero Section */
+
+
+    #hero-section p {
+        display: none;
+    }
+
+
+
+    .content {
+        width: 85%;
+        text-align: center;
+        transform: translateY(-100%);
+    }
+
+    .hor-line {
+        margin-left:auto ;
+        margin-right: auto;
+    }
+
+    button {
+        padding: 5px 10px;
+    }
+
+    /* Service Section */
+
+    .service-item {
+        width: 94%;
+    }
 }
