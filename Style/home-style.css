@@ -1,0 +1,732 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+/* Nav Bar */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    min-height: 80px;
+    background: #212741;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+
+.logo {
+    height: 80px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 100%;
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    color: #ffffff;
+    align-items: center;
+}
+
+.nav-links a:hover {
+    color: #ff511a;
+}
+
+.nav-links button a:hover{
+    color: #000;
+}
+
+.nav-links select:hover {
+    color:#ff511a
+}
+
+.nav-links li {
+    margin-left: clamp(20px,1.3vw,200px);
+    margin-right: clamp(20px,1.3vw,200px);
+    font-size: clamp(0.8rem,1vw,1.5rem );
+}
+
+.nav-links select {
+    border: none;
+    font-size: clamp(0.8rem,1vw,1.5rem );
+    background: transparent;
+}
+
+option {
+    color: black;
+}
+
+
+button {
+    background-color: #43ba7f;
+    color: #ffffff;
+    padding:7px 20px;
+    line-height: 25px;
+    border-radius:5px;
+    border: none;
+    font-size: clamp(0.8rem,1vw,1.5rem );
+    margin-right: clamp(15px,1.3vw,200px);
+}
+
+
+
+button:hover {
+    background-color: #ae624c;
+}
+
+/* Hero Section */
+
+#hero-section {
+    background-image: url(/Mexant-website/Images/hero-section.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    width: 50%;
+    top: 80%;
+    transform: translateY(-80%);
+    left:  clamp(25px, 8vw, 200px);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: clamp(40px,4vw,100px);
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+#hero-section em {
+    font-style: normal;
+    color: #ff511a;
+}
+
+.hor-line {
+    height: 6px;
+    width: clamp(60px,7vw,200px);
+    background-color: #ffffff;
+    border-radius: 3px;
+    margin-bottom: 40px;
+}
+
+#hero-section p {
+    margin-right: clamp(25px, 8vw, 200px);
+    margin-bottom: 50px;
+    font-size: clamp(0.8rem,1vw,1.5rem );
+    line-height: 26px;
+}
+
+.color-btn {
+    background-color: #ff511a;
+}
+
+/* Services Section */
+
+#Services {
+    margin: 60px 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 47%;
+    padding: clamp(20px,2vw,80px);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin: clamp(20px,2vw,80px) clamp(10px,1vw,40px);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.service-item h4 {
+    color: #212741;
+    font-weight: 600;
+    font-size: clamp(22px,1.3vw,50px);
+    margin-bottom: 20px;
+}
+
+.service-item p {
+    color: #212741;
+    line-height: 26px;
+    font-size: clamp(15px,1vw,60px);
+}
+
+
+.ser-icon i {
+    color: #43ba7f;
+    font-size: 64px;
+}
+
+.ser-content {
+    padding-left: clamp(20px,7%,100px);
+}
+
+/* Simple Section */
+
+#Simple {
+    padding: 80px 0;
+    background-image: url(/Mexant-website/Images/simple-section.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Simple h4 {
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 700;
+    width: 30%;
+}
+
+#Simple strong {
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #ff511a;
+}
+
+#Simple em{
+    font-style: normal;
+    color: #43ba7f;
+}
+
+
+/* About Section */
+
+#About {
+    margin: 60px 5%;
+}
+
+.heading h6 {
+    font-size: clamp(16px,1vw,50px);
+    color: #ff511a;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.heading h4 {
+    margin-top: 10px;
+    line-height: 40px;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #212741;
+}
+
+.heading {
+    position: relative;
+    z-index: 2;
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+
+.menu {
+    display: flex;
+}
+
+.menu div {
+    padding: clamp(5px,1vw,20px) clamp(10px,2vw,40px);
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px !important;
+    margin-right: clamp(10px,2vw,40px);
+    font-size: clamp(0.8rem,1.4vw,3rem);
+    color: #212741;
+    background-color: #fff;
+    cursor: pointer;
+    vertical-align: middle;
+    font-weight: 600;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu div:hover {
+    color: #ff511a;
+}
+
+.table {
+    width: 100%;
+}
+
+.main-list {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+
+.list-item {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+
+.item {
+    font-size: clamp(12px, 1vw, 60px);
+    color: #212741;
+    font-weight: 400;
+    display: inline-block;
+    width: 24%;
+}
+
+.item-title {
+    color: #43ba7f !important;
+    font-weight: 600 !important;
+}
+
+.last-item {
+    margin-bottom: 0;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-content {
+    width: 65%;
+}
+
+.right-content {
+    width: 260px;
+    margin-left: 60px;
+}
+
+.right-content h4{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 40px;
+    color: #212741;
+}
+
+.right-content p {
+    font-size: 15px;
+    line-height: 26px;
+    color: #212741;
+}
+
+.right-content b {
+    font-weight: bolder;
+    color: #212741;
+}
+
+/* Contact */
+
+#Contact {
+    margin-top: 150px;
+    background-image: url(/Mexant-website/Images/contact-section-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    padding: 80px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#Contact .heading{
+    text-align: left;
+}
+
+.left-image {
+    
+    margin: -110px 45px -80px 0px;
+    width: 45%;
+}
+
+.right-form {
+    width: 40%;
+}
+
+
+#Contact .heading h4 {
+    color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0 10px;
+    width: 90%;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+input {
+    background-color: rgba(121, 134, 151, 0.7);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 42px;
+    padding: 0 15px;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+#Contact select {
+    background-color: rgba(121, 134, 151, 0.7);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 42px;
+    padding: 0 15px;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+#halflen-input {
+    width: 45%;
+}
+
+#Orange-btn {
+    font-size: 14px;
+    color: #fff;
+    background-color: #ff511a;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    border: none;
+    width: 150px;
+}
+
+/* Testimonal Section */
+
+#Testimonals {
+    margin: 60px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Testimonals i {    
+    width: 70px;
+    height: 70px;
+    background-color: #43ba7f;
+    display: inline-block;
+    text-align: center;
+    line-height: 70px;
+    color: #fff;
+    font-size: 44px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+
+
+#Testimonals .item {
+    width: 80%;
+    border-radius: 15px;
+    padding: 50px 320px 50px 50px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding-top: 35px;
+}
+
+#Testimonals p {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 26px;
+    color: #212741;
+}
+
+#Testimonals img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+#Testimonals .item h4 {
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    color: #212741;
+}
+
+#Testimonals .item span {
+    margin-top: 5px;
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #43ba7f;
+}
+
+
+/* companyname section */
+
+#company-name {
+    background-color: #212741;
+    padding: 80px 0px;
+    margin-top: 120px;
+}
+
+#company-name img {
+    margin: 5px 15px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+/* footer  */
+
+footer {
+    background-color: #181d30;
+    text-align: center;
+    padding: 25px 0px;
+}
+
+footer p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+footer a {
+    color: #ff511a;
+}
+
+
+/* Mobile Version */
+
+@media (max-width:767px) {
+
+    .logo {
+        margin-left: clamp(25px,1.3vw,200px);
+    }
+
+
+    nav {
+        justify-content: space-between;
+    }
+
+
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        display: none;
+        height: auto;
+        width: 50%;
+        flex-direction: column;
+        background-color: white;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .nav-links li {
+        margin-top: 40px;
+    }
+
+    .nav-links a {
+        color: black;
+    }
+
+    .nav-links select {
+        color: black;
+    }
+
+    .nav-links button {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+        margin-right: clamp(20px,1.3vw,200px);
+        font-size: clamp(25px,1.3vw,200px);;;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    /* Hero Section */
+
+
+    #hero-section p {
+        display: none;
+    }
+
+
+
+    .content {
+        width: 85%;
+        text-align: center;
+        transform: translateY(-100%);
+    }
+
+    .hor-line {
+        margin-left:auto ;
+        margin-right: auto;
+    }
+
+    button {
+        padding: 5px 10px;
+    }
+
+    /* Service Section */
+
+    .service-item {
+        width: 94%;
+    }
+
+    /* Simple Section */
+
+    #Simple {
+        align-items: center;
+    }
+
+    #Simple h4 {
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    .buttons {
+        margin-top: 40px;
+    }
+
+    /* About */
+
+    .left-content {
+        width: 100%;
+    }
+
+    .right-content {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    /* Contact Section */
+
+    #Contact {
+        justify-content: center;
+    }
+
+    .left-image {
+        display: none;
+    }
+
+    .right-form {
+        width: 80%;
+    }
+
+    /* Testimonals Section */
+
+    #Testimonals img {
+        max-width: 100px;
+        right: 20px;
+        top: 5px;
+        transform: translateY(0);
+    }
+
+    #Testimonals .item {
+        padding: 50px;
+    }
+}
+
+
+/* Tablet Version */
+
+@media (min-width:767px) and (max-width:1024px) {
+    nav button {
+        display: none;
+    }
+
+    /* Service Section */
+
+    .service-item {
+        width: 94%;
+    }
+
+    /* About Section */
+
+    .left-content {
+        width: 100%;
+    }
+
+    .right-content {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    /* Contact Section */
+
+    #Contact {
+        justify-content: center;
+    }
+
+    .left-image {
+        display: none;
+    }
+
+    .right-form {
+        width: 80%;
+    }
+
+    /* Testimonals Section */
+
+    #Testimonals img {
+        max-width: 200px;
+        right: 50px;
+    }
+}
+
+
