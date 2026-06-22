@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Mexant-website/Style/about-style.css">
+    <link rel="stylesheet" href="/Mexant-website/Style/home-style.css">
+</head>
+<body>
+    
+    <!-- Nav Bar -->
+
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/Mexant-website/Images/logo.png">
+            </div>
+
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-btn">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="/Mexant-website/Structure/index.html#hero-section">Home</a></li>
+                <li><a href="/Mexant-website/Structure/index.html#Services">Services</a></li>
+                <li><a href="/Mexant-website/Structure/index.html#About">About</a></li>
+                <li class="dropdown">
+                    <a href="#" id="dropBtn">
+                        Pages <span><i class="fa-solid fa-angle-down"></i></span>
+                    </a>
+
+                    <ul class="submenu">
+                        <li><a href="/Mexant-website/Structure/about.html">About Us</a></li>
+                        <li><a href="/Mexant-website/Structure/services.html">Our Services</a></li>
+                        <li><a href="/Mexant-website/Structure/contact.html">Contact Us</a></li>
+                    </ul>
+                </li>
+
+                <script>
+                    const dropdown = document.querySelector(".dropdown");
+                    const btn = document.querySelector("#dropBtn");
+
+                    btn.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        dropdown.classList.toggle("active");
+                    });
+                </script>
+                <li><a href="/Mexant-website/Structure/index.html#Testimonals">Testimonials</a></li>
+                <li><button><a href="/Mexant-website/Structure/contact.html">Contact Support</a></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about-hero-section">
+        <div class="header-text">
+            <h2>About Us</h2>
+            <div class="hor-line"></div>
+        </div>
+    </section>
+
+    <!-- Top Section -->
+
+    <section id="top-section">
+        <div class="aboutleft-image">
+            <img src="/Mexant-website/Images/about-left-image.jpg">
+        </div>
+        <div class="aboutright-content">
+            <article>
+                <div class="open-article-heading">
+                    <span>Mexant Financial Planning</span>
+                    <span class="article-icon"><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <div class="article-content">
+                    <p>
+                        You will see a bunch of free CSS templates when you search on Google. TemplateMo website is probably the best one because it is 100% free. 
+                        <br>
+                        <br>
+                        We do not ask you anything in return. You are free to use our templates for any purpose.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <div class="close-article-heading">
+                    <span>Mexant Crypto Investing</span>
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                </div>
+            </article>
+            <article>
+                <div class="close-article-heading">
+                    <span>Cryptocurrency Investments</span>
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Simple Section -->
+
+    <section id="Simple">
+        <h4>
+            Business <em>Solutions</em> and <strong>Crypto</strong> Investements
+        </h4>
+
+        <div class="buttons">
+            <button><a href="#">Discover More</a></button>
+            <button class="color-btn"><a href="/Mexant-website/Structure/contact.html">Contact Us</a></button>
+        </div>
+    </section>
+
+    <!-- Bottom Section -->
+
+    <section id="bottom-section">
+        <div class="left-content">
+            <h4>Please tell us about your idea and how you want it to be</h4>
+            <p>If you need more HTML templates, you can try visiting TooCSS blog and Tooplate websites. You can get many good templates on those websites.
+                <br>
+                <br>
+                Nulla non placerat neque, a gravida elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi sed dolor condimentum tellus commodo volutpat non malesuada turpis.
+            </p>
+        </div>
+        <div class="right-items">
+            <div class="item">
+                <em>01</em>
+                <h4>First Step</h4>
+                <p>Pellentesque ipsum elit, congue a sapien laoreet, pellentesque ultricies risus.</p>
+            </div>
+            <div class="item">
+                <em>02</em>
+                <h4>Second Step</h4>
+                <p>Pellentesque ipsum elit, congue a sapien laoreet, pellentesque ultricies risus.</p>
+            </div>
+            <div class="item">
+                <em>03</em>
+                <h4>Third Step</h4>
+                <p>Pellentesque ipsum elit, congue a sapien laoreet, pellentesque ultricies risus.</p>
+            </div>
+            <div class="item">
+                <em>04</em>
+                <h4>Forth Step</h4>
+                <p>Pellentesque ipsum elit, congue a sapien laoreet, pellentesque ultricies risus.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="company-name">
+        <div class="container">
+            <img src="/Mexant-website/Images/client-01.png">
+            <img src="/Mexant-website/Images/client-01.png">
+            <img src="/Mexant-website/Images/client-01.png">
+            <img src="/Mexant-website/Images/client-01.png">
+            <img src="/Mexant-website/Images/client-01.png">
+            <img src="/Mexant-website/Images/client-01.png">
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Copyright © 2022 Mexant Co., Ltd. All Rights Reserved. 
+                <br>
+                Designed by
+                <a href="#">TemplateMo</a> 
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

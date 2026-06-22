@@ -1,0 +1,267 @@
+/* About Hero Section */
+
+section {
+    margin: 70px 5%;
+}
+
+#about-hero-section {
+    background-image: url(/Mexant-website/Images/Aboutpage-heading.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 215px 0px 120px 0px;
+    text-align: center;
+    margin: 0;
+}
+
+#about-hero-section h2{
+    font-size: 56px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#company-name {
+    margin: 0;
+}
+
+
+/* Top section */
+
+#top-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutleft-image {
+    width: 50%;
+    margin-right: 30px;
+}
+
+.aboutleft-image img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.aboutright-content {
+    border-radius: 5px;
+    padding: 50px 40px;
+    background-color: #fff;
+    margin-left: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+.aboutright-content article {
+    border-bottom: 1px solid #eee;
+}
+
+.open-article-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+}
+
+.close-article-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+}
+
+.aboutright-content span {
+    border-bottom: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.open-article-heading span {
+    color: #43ba7f;
+}
+
+.close-article-heading span {
+    color: #212741;
+}
+
+.aboutright-content i {
+    border-bottom: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.open-article-heading i {
+    color: #43ba7f;
+}
+
+.close-article-heading i {
+    color: #212741;
+}
+
+.article-content p {
+    padding: 0px 0px 30px 0px;
+    font-size: 15px;
+    line-height: 26px;
+    color: #212741;
+}
+
+/* Simple Section */
+
+#Simple {
+    margin: 0;
+}
+
+/* Bottom section */
+
+#bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+#bottom-section .left-content {
+    width: 31%;
+    margin-right: 60px;
+}
+
+.left-content h4 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 40px;
+    color: #212741;
+}
+
+.left-content p {
+    margin-bottom: 40px;
+    font-size: 15px;
+    line-height: 26px;
+    color: #212741;
+}
+
+.right-items {
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.right-items .item {
+    border-radius: 5px;
+    padding: 40px 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    position: relative;
+    width: 48%;
+}
+
+.right-items em {
+    position: absolute;
+    font-style: normal;
+    font-size: 44px;
+    color: #43ba7f;
+    font-weight: 600;
+    right: 15px;
+    top: 5px;
+}
+
+.right-items h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 22px;
+    color: #212741;
+}
+
+.right-items p {
+    font-size: 15px;
+    line-height: 26px;
+    color: #212741;
+}
+
+
+
+
+
+
+
+
+
+/* Mobile Version */
+
+@media (max-width:767px) {
+
+    #top-section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .aboutright-content {
+        width: 85%;
+        margin-left: 0;
+    }
+
+    .aboutleft-image {
+    width: 85%;
+    margin-right: 0;
+    margin-bottom: 30px;
+    }
+
+    #bottom-section .left-content {
+    width: 85%;
+    margin-right: 0;
+    margin-bottom: 45px;
+    }
+
+    #bottom-section .right-items {
+    width: 85%;
+    }
+
+    .right-items .item {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+/* Tablet Version */
+@media (min-width:767px) and (max-width:1024px) {
+    #top-section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .aboutright-content {
+        width: 85%;
+        margin-left: 0;
+    }
+
+    .aboutleft-image {
+    width: 85%;
+    margin-right: 0;
+    margin-bottom: 30px;
+    }
+
+    #bottom-section .left-content {
+    width: 85%;
+    margin-right: 0;
+    margin-bottom: 45px;
+    }
+
+    #bottom-section .right-items {
+    width: 85%;
+    }
+
+    .right-items .item {
+        width: 100%;
+    }
+}

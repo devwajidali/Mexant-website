@@ -27,16 +27,29 @@
                 <li><a href="#hero-section">Home</a></li>
                 <li><a href="#Services">Services</a></li>
                 <li><a href="#About">About</a></li>
-                <li>
-                    <select>
-                        <option>Pages</option>
-                        <option><a href="/Mexant-website/Structure/about">About Us</a></option>
-                        <option><a href="/Mexant-website/Structure/services">Our services</a></option>
-                        <option><a href="/Mexant-website/Structure/contact">Contact Us</a></option>
-                    </select>
+                <li class="dropdown">
+                    <a href="#" id="dropBtn">
+                        Pages <span><i class="fa-solid fa-angle-down"></i></span>
+                    </a>
+
+                    <ul class="submenu">
+                        <li><a href="/Mexant-website/Structure/about.html">About Us</a></li>
+                        <li><a href="/Mexant-website/Structure/services.html">Our Services</a></li>
+                        <li><a href="/Mexant-website/Structure/contact.html">Contact Us</a></li>
+                    </ul>
                 </li>
+
+                <script>
+                    const dropdown = document.querySelector(".dropdown");
+                    const btn = document.querySelector("#dropBtn");
+
+                    btn.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        dropdown.classList.toggle("active");
+                    });
+                </script>
                 <li><a href="#Testimonals">Testimonials</a></li>
-                <li><button><a href="/Mexant-website/Structure/contact">Contact Support</a></button></li>
+                <li><button><a href="/Mexant-website/Structure/contact.html">Contact Support</a></button></li>
             </ul>
         </nav>
     </header>
@@ -49,7 +62,7 @@
             <div class="hor-line"></div>
             <p>Mexant HTML5 Template is provided for free of charge. This layout is based on Boostrap 5 CSS framework. Anyone can download and edit for any professional website. Thank you for visiting TemplateMo website.</p>
             <button><a href="#">Discover More</a></button>
-            <button class="color-btn"><a href="/Mexant-website/Structure/contact">Contact Us</a></button>
+            <button class="color-btn"><a href="/Mexant-website/Structure/contact.html">Contact Us</a></button>
         </div>
     </section>
 
@@ -121,7 +134,7 @@
 
         <div class="buttons">
             <button><a href="#">Discover More</a></button>
-            <button class="color-btn"><a href="/Mexant-website/Structure/contact">Contact Us</a></button>
+            <button class="color-btn"><a href="/Mexant-website/Structure/contact.html">Contact Us</a></button>
         </div>
     </section>
 
@@ -210,6 +223,8 @@
                         <option>Choose an Option</option>
                         <option>Online Banking</option>
                         <option>Financial Control</option>
+                        <option>Yearly Profit</option>
+                        <option>Crypto Investement</option>
                     </select>
                 </fieldset>
                 <fieldset><button type="submit" id="Orange-btn"><a href="#">Submit</a></button></fieldset>

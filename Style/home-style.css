@@ -59,24 +59,11 @@ nav {
     color: #000;
 }
 
-.nav-links select:hover {
-    color:#ff511a
-}
 
 .nav-links li {
     margin-left: clamp(20px,1.3vw,200px);
     margin-right: clamp(20px,1.3vw,200px);
     font-size: clamp(0.8rem,1vw,1.5rem );
-}
-
-.nav-links select {
-    border: none;
-    font-size: clamp(0.8rem,1vw,1.5rem );
-    background: transparent;
-}
-
-option {
-    color: black;
 }
 
 
@@ -95,6 +82,49 @@ button {
 
 button:hover {
     background-color: #ae624c;
+}
+
+.submenu li a:hover {
+    color: #ff511a;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.submenu{
+    position: absolute;
+    width: 140px;
+    background-color: #fff;
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    top: 40px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    list-style: none;
+}
+
+.submenu a {
+    opacity: 1;
+    display: block;
+    background: #f7f7f7;
+    color: #2a2a2a !important;
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    font-size: 12px;
+    font-weight: 400;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown.active .submenu{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 /* Hero Section */
