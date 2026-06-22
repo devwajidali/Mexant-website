@@ -4,11 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/Mexant-website/Style/home-style.css">
     <link rel="stylesheet" href="/Mexant-website/Style/about-style.css">
     <link rel="stylesheet" href="/Mexant-website/Style/service-style.css">
 </head>
 <body>
-    
+    <!-- Nav Bar -->
+
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/Mexant-website/Images/logo.png">
+            </div>
+
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-btn">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="/Mexant-website/Structure/index.html#hero-section">Home</a></li>
+                <li><a href="/Mexant-website/Structure/index.html#Services">Services</a></li>
+                <li><a href="/Mexant-website/Structure/index.html#About">About</a></li>
+                <li class="dropdown">
+                    <a href="#" id="dropBtn">
+                        Pages <span><i class="fa-solid fa-angle-down"></i></span>
+                    </a>
+
+                    <ul class="submenu">
+                        <li><a href="/Mexant-website/Structure/about.html">About Us</a></li>
+                        <li><a href="/Mexant-website/Structure/services.html">Our Services</a></li>
+                        <li><a href="/Mexant-website/Structure/contact.html">Contact Us</a></li>
+                    </ul>
+                </li>
+
+                <script>
+                    const dropdown = document.querySelector(".dropdown");
+                    const btn = document.querySelector("#dropBtn");
+
+                    btn.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        dropdown.classList.toggle("active");
+                    });
+                </script>
+                <li><a href="/Mexant-website/Structure/index.html#Testimonals">Testimonials</a></li>
+                <li><button><a href="/Mexant-website/Structure/contact.html">Contact Support</a></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about-hero-section">
+        <div class="header-text">
+            <h2>Our Services</h2>
+            <div class="hor-line"></div>
+        </div>
+    </section>
+
+    <!-- Top Section -->
+
+    <section id="main-services">
+        <div class="services-item">
+            <div class="left-side-image">
+                <img src="/Mexant-website/Images/service-image-01.jpg">
+            </div>
+            <div class="right-text-content">
+                <i class="fa-solid fa-box-archive"></i>
+                <h4>Digital Currencies</h4>
+                <p>You will see a bunch of free CSS templates when you search on Google. TemplateMo is the best one because it is 100% free for anyone. We do not ask you anything in return. You are free to use our templates for any purpose.</p>
+            </div>
+        </div>
+        <div class="services-item">
+            <div class="right-text-content">
+                <i class="fa-solid fa-box-archive"></i>
+                <h4>Financial Solutions</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et ex massa. In ac laoreet urna. Curabitur eu enim nibh. Phasellus sodales nisi vel leo aliquam, ut tempus augue hendrerit. Pellentesque eu risus tincidunt, condimentum eros in, auctor augue. Vivamus et urna blandit, varius sapien sed.</p>
+            </div>
+            <div class="left-side-image">
+                <img src="/Mexant-website/Images/service-image-02.jpg">
+            </div>
+        </div>
+        <div class="services-item">
+            <div class="left-side-image">
+                <img src="/Mexant-website/Images/service-image-03.jpg">
+            </div>
+            <div class="right-text-content">
+                <i class="fa-solid fa-box-archive"></i>
+                <h4>Cryptocurrency Exchanges</h4>
+                <p>Mauris id efficitur ante, vitae ultrices metus. Donec et nunc massa. Nullam non felis dignissim, dapibus turpis semper, vulputate lorem. Nam volutpat posuere tellus, in porttitor justo interdum nec. Aenean in dapibus risus, in euismod ligula. Aliquam vel scelerisque elit.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Simple Section -->
+
+    <section id="Simple">
+        <h4>
+            Business <em>Solutions</em> and <strong>Crypto</strong> Investements
+        </h4>
+
+        <div class="buttons">
+            <button><a href="#">Discover More</a></button>
+            <button class="color-btn"><a href="/Mexant-website/Structure/contact.html">Contact Us</a></button>
+        </div>
+    </section>
+
+    <!-- Bottom Section -->
+
+    <section id="service-bottom-section">
+        <div class="heading">
+            <h6>Investement in details</h6>
+            <h4>upgrade Your Knownledge</h4>
+        </div>
+        <div class="menu">
+            <div class="first-ops">Crypto Investments</div>
+            <div class="second-ops">Cryptocurrency Market</div>
+            <div class="third-ops">Financial Planning</div>
+        </div>
+        <div class="active">
+            <div class="left-side-text-image">
+                <img src="/Mexant-website/Images/service-details-01.jpg">
+            </div>
+            <div class="right-side-text-content">
+                <h4>Learn more about cryptocurrency investments</h4>
+                <p>Etiam id ligula risus. Fusce fringilla nisl nunc, nec rutrum lectus cursus nec. In blandit nibh dolor, at rutrum leo accumsan porta. Nullam pulvinar eros porttitor risus condimentum tempus.</p>
+                <span>- Top Crypto prices and charts</span>
+                <span>- Is Cryptocurrency a good investment?</span>
+                <span>- Crypto Market Insiders and News</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="company-name">
+        <div class="container">
+            <img src="/Mexant-website/Images/client-01.png">
+            <img src="/Mexant-website/Images/client-01.png">
+            <img src="/Mexant-website/Images/client-01.png">
+            <img src="/Mexant-website/Images/client-01.png">
+            <img src="/Mexant-website/Images/client-01.png">
+            <img src="/Mexant-website/Images/client-01.png">
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Copyright © 2022 Mexant Co., Ltd. All Rights Reserved. 
+                <br>
+                Designed by
+                <a href="#">TemplateMo</a> 
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
