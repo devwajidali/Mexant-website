@@ -110,7 +110,6 @@ button:hover {
 .submenu a {
     opacity: 1;
     display: block;
-    background: #f7f7f7;
     color: #2a2a2a !important;
     padding-left: 20px;
     height: 40px;
@@ -119,6 +118,11 @@ button:hover {
     font-size: 12px;
     font-weight: 400;
     border-bottom: 1px solid #eee;
+}
+
+.submenu a:hover {
+    position: relative;
+    left: 5px;
 }
 
 .dropdown.active .submenu{
@@ -213,6 +217,11 @@ h2 {
     font-size: 64px;
 }
 
+.ser-icon i:hover {
+    position: relative;
+    top: 15px;
+}
+
 .ser-content {
     padding-left: clamp(20px,7%,100px);
 }
@@ -268,7 +277,7 @@ h2 {
     margin-top: 10px;
     line-height: 40px;
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 800;
     text-transform: capitalize;
     color: #212741;
 }
@@ -404,7 +413,7 @@ h2 {
     color: #ffffff;
 }
 
-form {
+.right-form form {
     display: flex;
     flex-wrap: wrap;
 }
@@ -422,7 +431,7 @@ label {
     font-size: 14px;
 }
 
-input {
+.right-form input {
     background-color: rgba(121, 134, 151, 0.7);
     border: none;
     border-radius: 5px;
@@ -624,6 +633,13 @@ footer a {
 
     #menu-toggle:checked ~ .nav-links {
         display: flex;
+    }
+
+    .submenu {
+        position: fixed;
+        right: 10px;
+        top: 100px;
+        
     }
 
     /* Hero Section */

@@ -171,6 +171,10 @@ section {
     top: 5px;
 }
 
+.item em:hover {
+    top: 20px;
+}
+
 .right-items h4 {
     font-size: 22px;
     font-weight: 600;

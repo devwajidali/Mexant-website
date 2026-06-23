@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Mexant-website/Style/home-style.css">
+    <link rel="stylesheet" href="/Mexant-website/Style/about-style.css">
+    <link rel="stylesheet" href="/Mexant-website/Style/contact-style.css">
+</head>
+<body>
+    <!-- Nav Bar -->
+
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/Mexant-website/Images/logo.png">
+            </div>
+
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-btn">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="/Mexant-website/Structure/index.html#hero-section">Home</a></li>
+                <li><a href="/Mexant-website/Structure/index.html#Services">Services</a></li>
+                <li><a href="/Mexant-website/Structure/index.html#About">About</a></li>
+                <li class="dropdown">
+                    <a href="#" id="dropBtn">
+                        Pages <span><i class="fa-solid fa-angle-down"></i></span>
+                    </a>
+
+                    <ul class="submenu">
+                        <li><a href="/Mexant-website/Structure/about.html">About Us</a></li>
+                        <li><a href="/Mexant-website/Structure/services.html">Our Services</a></li>
+                        <li><a href="/Mexant-website/Structure/contact.html">Contact Us</a></li>
+                    </ul>
+                </li>
+
+                <script>
+                    const dropdown = document.querySelector(".dropdown");
+                    const btn = document.querySelector("#dropBtn");
+
+                    btn.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        dropdown.classList.toggle("active");
+                    });
+                </script>
+                <li><a href="/Mexant-website/Structure/index.html#Testimonals">Testimonials</a></li>
+                <li><button><a href="/Mexant-website/Structure/contact.html">Contact Support</a></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about-hero-section">
+        <div class="header-text">
+            <h2>Contact Us</h2>
+            <div class="hor-line"></div>
+        </div>
+    </section>
+
+
+    <!-- Map Section -->
+
+    <section class="map">
+        <div id="map">
+            <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="border:0" allowfullscreen="" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBVizdQeh3udy11xDc5Ao2YStR2gLc-rfc&amp;q=Fawkner%20Park&amp;maptype=satellite&amp;zoom=16"><a href="https://www.maps.ie/create-google-map/">Embed Map with directions</a></iframe></div>
+        </div>
+        <div class="info-items">
+            <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <h4>Email Address</h4>
+                <a href="#">info@company.com</a>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-phone"></i>
+                <h4>Phone Number</h4>
+                <a href="#">010-020-0340</a>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <h4>Address</h4>
+                <a href="#">Victoria, Australia</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+
+    <section id="contact-form">
+        <div class="heading">
+            <h6>Contact Us</h6>
+            <h4>Feel free to message us</h4>
+        </div>
+        <form>
+            <input type="text" placeholder="Your Name...">
+            <input type="text" placeholder="Your Phone..."> 
+            <input type="text" placeholder="Your E-mail...">
+            <input type="text" placeholder="Subject...">
+            <textarea placeholder="Your Message" rows="8"></textarea>
+            <fieldset id="contact-btn"><button type="submit" id="Orange-btn"><a href="#">Submit</a></button></fieldset>
+        </form>
+    </section>
+
+    
+
+    <section id="company-name">
+        <div class="container">
+            <img src="/Mexant-website/Images/client-01.png">
+            <img src="/Mexant-website/Images/client-01.png">
+            <img src="/Mexant-website/Images/client-01.png">
+            <img src="/Mexant-website/Images/client-01.png">
+            <img src="/Mexant-website/Images/client-01.png">
+            <img src="/Mexant-website/Images/client-01.png">
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Copyright © 2022 Mexant Co., Ltd. All Rights Reserved. 
+                <br>
+                Designed by
+                <a href="#">TemplateMo</a> 
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
