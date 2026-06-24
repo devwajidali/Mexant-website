@@ -183,41 +183,64 @@ h2 {
 /* Services Section */
 
 #Services {
-    margin: 60px 5%;
+    margin: 60px 0;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+.ser-items {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .service-item {
-    width: 47%;
+    /* width: 47%;
     padding: clamp(20px,2vw,80px);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     margin: clamp(20px,2vw,80px) clamp(10px,1vw,40px);
     display: flex;
     align-items: center;
+    border-radius: 5px; */
     border-radius: 5px;
+    padding: 40px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    width: 42%;
+    margin: clamp(20px,2vw,80px) clamp(10px,1vw,40px);
 }
 
 .service-item h4 {
     color: #212741;
-    font-weight: 600;
+    /* font-weight: 600;
     font-size: clamp(22px,1.3vw,50px);
+    margin-bottom: 20px; */
+    font-size: 22px;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
 .service-item p {
-    color: #212741;
+    /* color: #212741;
     line-height: 26px;
-    font-size: clamp(15px,1vw,60px);
+    font-size: clamp(15px,1vw,60px); */
+    font-size: 15px;
+    line-height: 26px;
+    color: #212741;
 }
 
 
-.ser-icon i {
-    color: #43ba7f;
+.service-item i {
+    /* color: #43ba7f;
+    font-size: 64px; */
+    float: left;
     font-size: 64px;
+    color: #43ba7f;
+    margin-bottom: 30px;
+    margin-right: 30px;
 }
 
-.ser-icon i:hover {
+.service-item i:hover {
     position: relative;
     top: 15px;
 }
@@ -396,6 +419,8 @@ h2 {
 
 #Contact .heading{
     text-align: left;
+    width: 100%;
+    max-width: 800px;
 }
 
 .left-image {
@@ -415,15 +440,17 @@ h2 {
 
 .right-form form {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-fieldset {
+#Contact fieldset {
     display: flex;
     flex-direction: column;
     border: none;
     padding: 0 10px;
-    width: 90%;
+    width: 100%;
+    max-width: 800px;
 }
 
 label {
@@ -458,7 +485,8 @@ label {
 }
 
 #halflen-input {
-    width: 45%;
+    width: 50%;
+    max-width: 400px;
 }
 
 #Orange-btn {
@@ -498,13 +526,14 @@ label {
 
 
 #Testimonals .item {
-    width: 80%;
+    width: 100%;
+    max-width: 1000px;
     border-radius: 15px;
     padding: 50px 320px 50px 50px;
     background-color: #fff;
     position: relative;
     overflow: hidden;
-    margin: 15px;
+    margin: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     padding-top: 35px;
 }
@@ -670,6 +699,7 @@ footer a {
 
     .service-item {
         width: 94%;
+        max-width: 500px;
     }
 
     /* Simple Section */
@@ -710,7 +740,23 @@ footer a {
     }
 
     .right-form {
-        width: 80%;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Contact .heading {
+        max-width: 500px;
+    }
+
+    #Contact fieldset {
+        max-width: 500px;
+    }
+
+    #halflen-input {
+        max-width: 250px;
     }
 
     /* Testimonals Section */
@@ -735,10 +781,12 @@ footer a {
         display: none;
     }
 
+
     /* Service Section */
 
     .service-item {
         width: 94%;
+        max-width: 750px;
     }
 
     /* About Section */
@@ -764,7 +812,11 @@ footer a {
     }
 
     .right-form {
-        width: 80%;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     /* Testimonals Section */
